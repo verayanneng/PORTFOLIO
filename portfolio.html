@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#07b6d5",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0f2023",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .glass-card {
+            background: rgba(15, 32, 35, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(7, 182, 213, 0.1);
+        }
+        .step-line {
+            background: linear-gradient(180deg, #07b6d5 0%, rgba(7, 182, 213, 0.1) 100%);
+        }
+        .glow-dot {
+            box-shadow: 0 0 15px rgba(7, 182, 213, 0.5);
+        }
+        .grid-bg {
+            background-image: radial-gradient(circle at 1px 1px, rgba(7, 182, 213, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 min-h-screen font-display">
+<!-- Mobile App Header -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-6 py-4 flex items-center justify-between">
+<a href="index.html" class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
+    <span class="material-icons-round">arrow_back</span>
+</a>
+<h1 class="text-lg font-bold tracking-tight uppercase">Ma Méthodologie</h1>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-icons-round">info_outline</span>
+</button>
+</header>
+<main class="pb-24 grid-bg">
+<!-- Hero Section -->
+<section class="px-6 pt-8 pb-4">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4 border border-primary/20">
+<span class="w-2 h-2 rounded-full bg-primary mr-2 animate-pulse"></span>
+                WORKFLOW TECHNIQUE
+            </div>
+<h2 class="text-3xl font-bold leading-tight mb-4">L'ingénierie de la clarté.</h2>
+<p class="text-slate-400 text-sm leading-relaxed max-w-xs">
+                Découvrez comment je transforme des besoins complexes en instructions machine déterministes et performantes.
+            </p>
+</section>
+<!-- Process Timeline -->
+<section class="px-6 mt-8 relative">
+<!-- Central Line -->
+<div class="absolute left-10 top-0 bottom-0 w-0.5 step-line"></div>
+<!-- Step 1 -->
+<div class="relative flex gap-6 mb-12">
+<div class="z-10 mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-background-dark border-2 border-primary flex items-center justify-center glow-dot">
+<span class="text-primary text-xs font-bold">01</span>
+</div>
+<div class="glass-card rounded-xl p-5 flex-grow">
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-primary uppercase text-sm tracking-widest">Analyse</h3>
+<span class="material-icons-round text-primary/50 text-sm">psychology</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Analyse du besoin</h4>
+<p class="text-slate-400 text-sm leading-relaxed">
+                        Identification des contraintes techniques, du ton et du format de sortie. Mapping du contexte métier global.
+                    </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex gap-6 mb-12">
+<div class="z-10 mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-background-dark border-2 border-primary/30 flex items-center justify-center">
+<span class="text-primary/50 text-xs font-bold">02</span>
+</div>
+<div class="glass-card rounded-xl p-5 flex-grow border-primary/10">
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-slate-400 uppercase text-sm tracking-widest">Architecture</h3>
+<span class="material-icons-round text-primary/50 text-sm">account_tree</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Structure du Prompt</h4>
+<p class="text-slate-400 text-sm leading-relaxed">
+                        Utilisation du <span class="text-primary">Chain-of-Thought (CoT)</span> et délimiteurs XML pour structurer le raisonnement logique.
+                    </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex gap-6 mb-12">
+<div class="z-10 mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-background-dark border-2 border-primary/30 flex items-center justify-center">
+<span class="text-primary/50 text-xs font-bold">03</span>
+</div>
+<div class="glass-card rounded-xl p-5 flex-grow border-primary/10">
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-slate-400 uppercase text-sm tracking-widest">Itération</h3>
+<span class="material-icons-round text-primary/50 text-sm">biotech</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Tests &amp; Raffinement</h4>
+<p class="text-slate-400 text-sm leading-relaxed">
+                        Élimination des hallucinations via des tests A/B et ajustement de la température pour une stabilité maximale.
+                    </p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex gap-6">
+<div class="z-10 mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-background-dark border-2 border-primary/30 flex items-center justify-center">
+<span class="text-primary/50 text-xs font-bold">04</span>
+</div>
+<div class="glass-card rounded-xl p-5 flex-grow border-primary/10">
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-slate-400 uppercase text-sm tracking-widest">Livraison</h3>
+<span class="material-icons-round text-primary/50 text-sm">rocket_launch</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Déploiement final</h4>
+<p class="text-slate-400 text-sm leading-relaxed">
+                        Validation du prompt final et documentation technique pour l'intégration API ou l'usage manuel.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Technical Toolkit Section -->
+<section class="mt-16 px-6">
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="w-8 h-[2px] bg-primary"></span>
+                Techniques Avancées
+            </h3>
+<div class="grid grid-cols-1 gap-4">
+<div class="p-4 rounded-xl bg-primary/5 border border-primary/20">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+<span class="material-icons-round text-primary">auto_fix_high</span>
+</div>
+<h5 class="font-bold">Few-Shot Prompting</h5>
+</div>
+<p class="text-xs text-slate-400 leading-normal">
+                        Fournir des exemples spécifiques au modèle pour "ancrer" le style de réponse et minimiser l'improvisation indésirable.
+                    </p>
+</div>
+<div class="p-4 rounded-xl bg-primary/5 border border-primary/20">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+<span class="material-icons-round text-primary">person_search</span>
+</div>
+<h5 class="font-bold">System Role Definition</h5>
+</div>
+<p class="text-xs text-slate-400 leading-normal">
+                        Établir une identité experte stricte pour influencer la profondeur lexicale et la rigueur analytique du modèle.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Illustration Image -->
+<section class="mt-12 px-6">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden border border-primary/20">
+<img alt="Abstract neural network visualization" class="w-full h-full object-cover opacity-60" data-alt="Abstract glowing cyan neural network connections on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdOc5FvYD6kznVl1yNG93OTXkJkro24TfUB1B4b3NjzzrQIkrOh9BZNIOZtMMzQSmiWHJ21fk-fk_KewONUmXz_QfdklGwaAcX5R0q7_NRx6zez9OaT8MICu7k1jOMAxQkeDlxWdRdtL_bvtEK6nNwDP51bgcdj3zPzFcYzdwoo9Rol4hRADpZ6wvLBVFdGimXfjrcmG8PaCh9qJlFyvr9U0tCD2qL1R8ARpTTSbWoVKTk0IP0O9lSLKP_sixBh9Q9EOe2b4bH04Xe"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-[10px] text-primary font-bold tracking-widest uppercase">Visualisation</p>
+<p class="text-xs text-white font-medium">Architecture d'une chaîne de pensée logique (CoT)</p>
+</div>
+</div>
+</section>
+<!-- Pro Tip Box -->
+<section class="mt-12 px-6 mb-8">
+<div class="bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6 relative overflow-hidden">
+<span class="material-icons-round absolute -right-4 -bottom-4 text-7xl text-primary/10">tips_and_updates</span>
+<h4 class="text-primary font-bold text-sm mb-2 flex items-center gap-2">
+<span class="material-icons-round text-sm">bolt</span> PRO-TIP
+                </h4>
+<p class="text-sm text-slate-300 italic relative z-10 leading-relaxed">
+                    "Un bon prompt n'est pas une question, c'est un cadre. Moins vous laissez d'espace à l'interprétation, plus le résultat est fiable."
+                </p>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (iOS Style) -->
+<nav class="fixed bottom-0 left-0 right-0 h-20 bg-background-dark/95 backdrop-blur-xl border-t border-primary/10 px-8 flex items-center justify-between z-50">
+    <a href="index.html" class="flex flex-col items-center gap-1 text-slate-500">
+        <span class="material-icons-round">home</span>
+        <span class="text-[10px] uppercase font-bold tracking-tighter">Accueil</span>
+    </a>
+    <a href="portfolio.html" class="flex flex-col items-center gap-1 text-primary">
+        <span class="material-icons-round">account_tree</span>
+        <span class="text-[10px] uppercase font-bold tracking-tighter">Méthode</span>
+    </a>
+    <a href="p.html" class="flex flex-col items-center gap-1 text-slate-500">
+        <span class="material-icons-round">description</span>
+        <span class="text-[10px] uppercase font-bold tracking-tighter">Mon CV</span>
+    </a>
+</nav>
+</body></html>
